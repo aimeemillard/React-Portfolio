@@ -30,6 +30,12 @@
   padding-top: 60px;
 }
 
+/* about me */
+#aboutMe {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 /* contact css */
 
 .contact-body {
@@ -123,4 +129,13 @@
   color: black;
   font-size: calc(4vw + 20px);
   padding: 8px;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin: 5px;
 }

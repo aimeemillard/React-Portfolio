@@ -3,13 +3,14 @@ import "./App.css";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
+import Footer from "./components/footer";
 
 class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color black" title={<Link style={{fontSize:"34px",textDecoration: "none", color: "white"}} to="/">MyPortfolio</Link>} scroll>
+        <Header className="header-color" title={<Link style={{fontSize:"34px",textDecoration: "none", color: "white"}} to="/">MyPortfolio</Link>} scroll>
             <Navigation>
                 <Link style={{fontSize:"20px"}}to="/resume">Resume</Link>
                 <Link style={{fontSize:"20px"}}to="/aboutme">About Me</Link>
@@ -30,6 +31,7 @@ class App extends Component {
             <Main/>
         </Content>
     </Layout>
+    <Footer />
 </div>
 
     );
