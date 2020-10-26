@@ -3,7 +3,7 @@ import { Grid, Cell } from "react-mdl";
 import Education from "./education";
 import Experience from "./experience";
 import Skills from "./skills";
-
+import Footer from "./footer";
 
 class Resume extends Component {
   render() {
@@ -27,9 +27,9 @@ class Resume extends Component {
             <h5>Address</h5>
             <p>Milfrod, CT 06460</p>
             <h5>Phone</h5>
-            <p>(123) 456-7890</p>
+            <p>(650) 278-9899</p>
             <h5>Email</h5>
-            <p>someone@example.com</p>
+            <p>an.millard19@gmail.com</p>
             
             <hr style={{borderTop: "3px solid #833fb2", width: "50%"}}/>
           </Cell>
@@ -40,32 +40,32 @@ class Resume extends Component {
             <Education
               startYear={2020}
               endYear={2020}
-              schoolName="University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              schoolName="Trilogy Education at UConn"
+              schoolDescription="Certificate in Full-Stack Development"
                />
 
                <Education
-                 startYear={2020}
-                 endYear={2020}
-                 schoolName="University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                 startYear={2013}
+                 endYear={2018}
+                 schoolName="Thomas Edison State University"
+                 schoolDescription="Bachelors Degree in Respiratory Care"
                   />
                 <hr style={{borderTop: "3px solid white"}} />
 
               <h2>Work History</h2>
 
             <Experience
-              startYear={2020}
+              startYear={2018}
               endYear={2020}
-              jobName="Job 1"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              jobName="West Haven Connecticut Veterans Affairs Medical Center"
+              jobDescription="Resgistered Respiratory Therapist"
               />
 
               <Experience
-                startYear={2020}
-                endYear={2020}
-                jobName="Job 2"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                startYear={2013}
+                endYear={2018}
+                jobName="US Army Reserves"
+                jobDescription="Respiratory Specialist"
                 />
               <hr style={{borderTop: '3px solid white'}} />
               <h2>Skills</h2>
@@ -81,6 +81,7 @@ class Resume extends Component {
                 skill="Express"/>
               
           </Cell>
+          <Footer />
         </Grid>
       </div>
     )

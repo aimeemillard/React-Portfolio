@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import Footer from "./footer";
+
 // import {URL} from "../img.png"
 
 class Contact extends Component {
@@ -26,14 +28,14 @@ class Contact extends Component {
                 <ListItem>
                   <ListItemContent style={{fontSize: "25px", fontFamily: "sans-serif"}}>
                     <i className="phone" aria-hidden="true"/>
-                    Cell: (123) 456-7890
+                    Cell: (650) 278-9899
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
                   <ListItemContent style={{fontSize: "20px", fontFamily: "sans-serif"}}>
                     <i className="email" aria-hidden="true"/>
-                    Email: someone@example.com
+                    Email: an.millard19@gmail.com
                   </ListItemContent>
                 </ListItem>
 
@@ -41,6 +43,7 @@ class Contact extends Component {
             </div>
           </Cell>
         </Grid>
+        <Footer />
       </div>
     )
   }
